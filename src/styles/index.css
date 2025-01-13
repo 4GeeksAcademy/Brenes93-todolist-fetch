@@ -1,12 +1,90 @@
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .text-center {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 3em;
+    color: rgba(200, 100, 100, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .entrada-tarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .entrada-tarea:focus {
+    border-bottom-color: #3498db;
+  }
+  
+  .lista-tareas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lista-tareas li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 18px;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .lista-tareas li:hover {
+    background: #fafafa;
+  }
+  
+  .boton-eliminar {
+    display: none;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .lista-tareas li:hover .boton-eliminar {
+    display: block;
+  }
+  
+  .sin-tareas {
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .contador-tareas {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
